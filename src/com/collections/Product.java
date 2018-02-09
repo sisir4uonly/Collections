@@ -9,7 +9,6 @@ public class Product {
 	private final int weight;
 
 	public Product(String productName, int productWeight) {
-		super();
 		name = productName;
 		weight = productWeight;
 	}

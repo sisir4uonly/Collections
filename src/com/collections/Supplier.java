@@ -1,8 +1,12 @@
 package com.collections;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Supplier {
 
 	private final String supplierName;
+	private final List<Product> products = new ArrayList<>();
 
 	public String getSupplierName() {
 		return supplierName;
@@ -12,8 +16,12 @@ public class Supplier {
 		this.supplierName = supplierName;
 	}
 
-	public Product products() {
+	public List<Product> products() {
+		return products;
+	}
 
-		return null;
+	@Override
+	public String toString() {
+		return "Supplier [supplierName=" + supplierName + ", products=" + products + "]";
 	}
 }

@@ -1,13 +1,13 @@
 package com.collections;
 
-import java.util.HashSet;
+import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.Set;
-import java.util.function.Supplier;
+import java.util.List;
 
 public class ProductCatalogue implements Iterable<Product> {
 
-	private final Set<Product> products = new HashSet<>();
+	private List<Product> products = new ArrayList<>();
+	// private Set<Product> products = new HashSet<>();
 
 	public void isSuppliedBy(Supplier supplier) {
 
